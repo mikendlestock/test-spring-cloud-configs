@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: counter
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_ADDRESS:http://localhost:8762/eureka/}
+message:
+  hello: it's a dev counter

@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: supplier
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_ADDRESS:http://localhost:8761/eureka}
+message:
+  hello: it's a dev supplier
